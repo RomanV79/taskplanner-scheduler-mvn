@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres/taskplanner?serverTimezone=UTC
+    password: ${DB_PASSWORD}
+  rabbitmq:
+    host: rabbitmq
+    password: ${RMQ_PASSWORD}

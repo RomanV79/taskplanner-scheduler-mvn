@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: admin
+  rabbitmq:
+    username: admin
+
+  jpa:
+    show-sql: true
+    generate-ddl: false
+
+app:
+  message:
+    quantity-limit-tasks-for-message: 5
+
+  rabbit:
+    queue: EMAIL_SENDING_TASKS
+    exchange: email
+    routing_key: email
